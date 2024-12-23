@@ -1,9 +1,11 @@
 ﻿// A simple shell project in C++
 #include "openshell.h"
 
-// The "strip" function is declared at redshell.h
+// The "strip" and "checkfor" functions are declared at analyzer.h
 
-int main() {
+
+int main() 
+{
 	std::string prompt, given_disk_name;
 
 	std::cout << "Please name the disk that redshell is installed on: ";
@@ -14,8 +16,11 @@ int main() {
 		std::cout << strip(given_disk_name) << ":/redshellCMD >> ";
 		std::getline(std::cin, prompt);
 
-		std::cout << strip(prompt) << std::endl;
+		bool includes = checkfor("hello", prompt);
+
+		std::cout << includes << std::endl;
 	}
 
 	return 0;
 }
+
