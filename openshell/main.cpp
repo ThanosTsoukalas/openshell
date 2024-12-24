@@ -3,7 +3,6 @@
 
 // The "strip" and "checkfor" functions are declared at analyzer.h
 
-
 int main() 
 {
 	std::string prompt, given_disk_name;
@@ -16,9 +15,9 @@ int main()
 		std::cout << strip(given_disk_name) << ":/redshellCMD >> ";
 		std::getline(std::cin, prompt);
 
-		bool includes = checkfor("hello", prompt);
-
-		std::cout << includes << std::endl;
+		prompt_rec(prompt);
+		
+	
 	}
 
 	return 0;
