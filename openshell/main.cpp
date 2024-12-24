@@ -17,6 +17,9 @@ int main()
 
 		prompt_rec(prompt);
 		
+		if (should_i_exit == true) {
+			return 0;
+		}
 	
 	}
 
