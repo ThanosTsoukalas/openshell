@@ -11,4 +11,5 @@
 // my own header files
 #include "analyzer.h"
 #include "prompt_rec.h"
-
+#include "programs_include.h"
+#include "is64bit.h"

@@ -17,6 +17,9 @@ void prompt_rec(std::string given_prompt) {
 		std::cout << "exit => exit the shell window" << std::endl;
 		std::cout << "help => get help regarding all available prompts" << std::endl;
 	}
+	else if (checkfor("dev", given_prompt) == true) {
+
+	}
 	else
 	{
 		std::cout << "Cannot recognise the given prompt" << std::endl;

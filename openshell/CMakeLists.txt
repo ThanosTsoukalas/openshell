@@ -3,7 +3,7 @@
 #
 
 # Add source to this project's executable.
-add_executable (openshell "main.cpp" "openshell.h"  "analyzer.h"    "prompt_rec.h")
+add_executable (openshell "main.cpp" "openshell.h"  "analyzer.h"    "prompt_rec.h" "programs_include.h" "text_edit.cpp" "is64bit.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET openshell PROPERTY CXX_STANDARD 20)

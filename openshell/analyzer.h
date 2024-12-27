@@ -11,7 +11,7 @@ std::string strip(std::string string_to_strip) {
 	// std::cout << "analyzer.h: string_length = " << string_length << std::endl;
 	int string_list_current_index = 0;
 	std::string actual_text;
-
+	std::list <int> actual_space_locations{};
 	while (string_length > 0)
 	{
 		if (string_to_strip[string_list_current_index] != ' ') {
@@ -38,6 +38,41 @@ std::string strip(std::string string_to_strip) {
 	return actual_text;
 }
 
+// returns the next argument of an argumental prompt
+std::string get_prompt_with_args(std::string given_prompt, std::string initial_prompt) {
+	std::string next_arg;
+
+	given_prompt = strip(given_prompt);
+
+	int whole_prompt_list_index = 0;
+	int initial_prompt_list_index = 0;
+	int matched_chars_for_initial_prompt = 0;
+	int given_prompt_length = given_prompt.length();
+	int initial_prompt_length = initial_prompt.length();
+	int current_initial_prompt_length = 0;
+
+	while (given_prompt_length > 0) {
+		if (given_prompt[whole_prompt_list_index] == initial_prompt[initial_prompt_list_index] && current_initial_prompt_length < initial_prompt_length)
+		{
+			matched_chars_for_initial_prompt += 1;
+			current_initial_prompt_length += 1;
+		}
+		else
+		{
+			return "ERR_UNMATCHED_CHARS";
+		}
+
+		whole_prompt_list_index += 1;
+		initial_prompt_list_index += 1;
+	}
+	if (matched_chars_for_initial_prompt == initial_prompt_length) {
+		whole_prompt_list_index += 1;
+		
+		while (whole_prompt_list_index > initial_prompt_length) {
+
+		}
+	}
+}
 
 // checks if a given string exists in a given text
 
