@@ -18,6 +18,12 @@ void prompt_rec(std::string given_prompt) {
 		std::cout << "help => get help regarding all available prompts" << std::endl;
 	}
 	else if (checkfor("dev", given_prompt) == true) {
+		int choice;
+		std::cout << "[1] Code Editor" << std::endl;
+		std::cout << "[2] Compilers" << std::endl;
+		std::cout << "[3] Runtime Environments" << std::endl;
+		std::cout << std::endl << "Enter your choice [1 - 3] >> ";
+		std::cin >> choice;
 
 	}
 	else
