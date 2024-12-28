@@ -4,7 +4,7 @@
 // The "strip" and "checkfor" functions are declared at analyzer.h
 
 
-int main() 
+int main()
 {
 	std::string prompt, given_disk_name;
 
@@ -28,7 +28,7 @@ int main()
 		if (should_i_exit == true) {
 			return 0;
 		}
-	
+
 	}
 
 	return 0;

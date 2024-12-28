@@ -9,7 +9,7 @@
 #include <cstdlib>
 
 // my own header files
-#include "analyzer.h"
-#include "prompt_rec.h"
-#include "programs_include.h"
-#include "is64bit.h"
+#include "./opensh_headers/analyzer.h"
+#include "./opensh_headers/prompt_rec.h"
+#include "./opensh_headers/programs_include.h"
+#include "./opensh_headers/is64bit.h"

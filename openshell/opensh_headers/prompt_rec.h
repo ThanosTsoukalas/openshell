@@ -1,6 +1,7 @@
 #pragma once
 
 #include "openshell.h"
+#include "all_commands.h"
 
 
 bool should_i_exit = false;
