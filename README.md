@@ -1,5 +1,7 @@
 # Openshell
 Openshell is a custom shell interface/command line that I created as a hobby project in order to learn C++. It is extremely basic at the moment, but I am looking forward to adding more features to it in the future.
+
+![Capture](https://github.com/user-attachments/assets/d46a8b49-72cc-4caa-9f77-1c59a1e93f68)
 ## This is a portable project 
 Unlike most applications, openshell can be downloaded and run on any version of Windows, either 32 or 64bit, including legacy versions (like Windows 95, 98, XP, etc.).
 ## Linux Support
@@ -7,3 +9,5 @@ I am a Windows user, but this project was made with cross-platform in mind. Pret
 
 ## CMake
 If you are working on Visual Studio for this project, as I am, then you should have no problem compiling from source.
+
+
