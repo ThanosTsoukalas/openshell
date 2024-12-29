@@ -14,4 +14,10 @@ I am a Windows user, but this project was made with cross-platform in mind. Pret
 # CMake
 If you are working on Visual Studio for this project, as I am, then you should have no problem compiling from source.
 
+# System Requirements
+- Any single or multi-core CPU should theoretically work with openshell
+- Your system needs to have at least 1.5 MB of unallocated RAM at any moment, excluding the RAM that system daemons allocate
+- Your system ideally needs to run Windows (any version should work, even legacy ones), but Unix-based systems can also run openshell with some minor modifications like a charm
+- Your system needs to have at least 350 MB of permanent storage.
 
+The system requirements may seem dumb (considering modern hardware), but my goal with openshell is to create a portable shell that can be ported to any kind of computing machine; from computers made 20 years ago to even the most sophisticated supercomputer.
