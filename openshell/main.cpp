@@ -8,7 +8,7 @@ int main()
 {
 	std::string prompt, given_disk_name;
 
-	std::cout << "Please name the disk that redshell is installed on: ";
+	std::cout << "Please name the disk that openshell is installed on: ";
 	std::getline(std::cin, given_disk_name);
 
 	if (bit64_check()) {
@@ -20,7 +20,7 @@ int main()
 	}
 	while (true)
 	{
-		std::cout << strip(given_disk_name) << ":/redshellCMD >> ";
+		std::cout << strip(given_disk_name) << ":/openshellCMD >> ";
 		std::getline(std::cin, prompt);
 
 		prompt_rec(prompt);
